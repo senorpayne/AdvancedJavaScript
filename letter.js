@@ -1,22 +1,41 @@
 
-exports.letter = letter;
-//var abc = process.argv[2];
+module.exports = Letter;
+var userinput = process.argv[2];
 
-function letter (abc){
+function Letter (abc){
     this.abc = abc;
     this.show = false;
+    
+    
 
-    if (this.abc ==='')
+    this.letterin = function(){
+
+    if (this.abc ===userinput){
     this.show = true;
+        console.log(this.abc);
+    
+        
+        }else{
+            console.log("_");
 
-    this.protoype.printInfo = function(){
 
-        if (this.show){
-            return this.abc;
-        }
     }
     return "_";
 
+}
+    this.check = function(){
+        if (this.show === true){
+        console.log(this.abc);
 
-} 
+
+    }
+    else {
+console.log("_");
+
+    }
+
+} };
+//var newletter = new Letter("a");
+//newletter.check();
+//newletter.letterin();
 
