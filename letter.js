@@ -10,9 +10,10 @@ function Letter (abc){
 
     this.letterin = function(){
 
-    if (this.abc ===userinput){
+    if (this.abc === userinput){
     this.show = true;
         console.log(this.abc);
+        return this.abc;
     
         
         }else{
@@ -35,7 +36,9 @@ console.log("_");
     }
 
 } };
+
+var newletter = new Letter("a");
 //var newletter = new Letter("a");
-//newletter.check();
-//newletter.letterin();
+newletter.check();
+newletter.letterin();
 
